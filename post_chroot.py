@@ -1,5 +1,5 @@
 import os
-print("this is the post_chroot install , tou can skip this if you want a barebones install . But tif you want a fully operable system , you have to do this . ")
+print("this is the post_chroot install , you can skip this if you want a barebones install . But if you want a fully operable system , you have to do this . ")
 
 # install and configuration
 os.system("grub install --target=i386-pc --recheck /dev/sda")
