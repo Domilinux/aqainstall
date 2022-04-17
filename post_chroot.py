@@ -1,8 +1,9 @@
 import os
 print("this is the post_chroot install , you can skip this if you want a barebones install . But if you want a fully operable system , you have to do this . ")
+a = input("plese enter the disk you want to install grub on : ")
 
 # install and configuration
-os.system("grub install --target=i386-pc --recheck /dev/sda")
+os.system("grub-install --target=i386-pc --recheck " + a)
 os.system("grub-mkconfig -o /boot/grub/grub.cfg")
 os.system("systemctl enable NetworkManager")
 os.system("pacman -S picom neofetch cmatrix htop ranger")
