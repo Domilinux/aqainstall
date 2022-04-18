@@ -15,8 +15,8 @@ os.system("echo '::1  localhost' >> /etc/hosts")
 os.system("echo '127.0.1.1  tux.localdomain  tux' >> /etc/hosts")
 
 # time configuraton
-os.system("ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime")
-os.system("hwclock --systohc --localtime")
+os.system("ln -sf /usr/share/zoneinfo/Europe/Zagreb /etc/localtime")
+os.system("hwclock --systohc --utc")
 
 # locale
 os.system("echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen")
